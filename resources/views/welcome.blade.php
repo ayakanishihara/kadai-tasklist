@@ -5,7 +5,7 @@
         <div class="text-center">
             <h1>タスクリストへようこそ</h1>
             {{-- ユーザ登録ページへのリンク --}}
-            {!! link_to_route('signup.get', '新規登録', [], ['class' => 'btn btn-lg btn-primary']) !!}
+            {!! link_to_route('signup.get', '新規会員登録', [], ['class' => 'btn btn-lg btn-primary']) !!}
         </div>
     </div>
 @endsection

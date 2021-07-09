@@ -54,7 +54,8 @@ class TasksController extends Controller
         $task->content = $request->content;
         $task->save();
         
-        return redirect('/');
+        //return redirect('/');
+        return redirect()->route('tasks.index', $task);
     }
 
     /**
@@ -107,7 +108,7 @@ class TasksController extends Controller
         $task->content = $request->content;
         $task->save();
         
-        return redirect('/');
+        return redirect()->route('tasks.index', $task);
     }
 
     /**
@@ -122,6 +123,6 @@ class TasksController extends Controller
         
         $task->delete();
         
-        return redirect('/');
+        return redirect()->route('tasks.index', $task);
     }
 }
